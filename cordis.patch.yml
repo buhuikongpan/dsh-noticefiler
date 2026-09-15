@@ -1,0 +1,6 @@
+# dsh-noticefiler bundle patch：把插件行插进 web 插件名册。
+# 用法：dsh plugin --profile web add <路径或 git 地址>
+# 客户端半（lib/client.js）由 package.json 里的 dsh.client 声明自动识别。
+- insert:
+    - id: noticefiler
+      name: 'dsh-noticefiler'

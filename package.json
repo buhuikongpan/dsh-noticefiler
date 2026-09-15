@@ -1,0 +1,40 @@
+{
+  "name": "dsh-noticefiler",
+  "version": "0.1.0",
+  "description": "DSH 通知插件：agent 需要审批/提问、本轮跑完、或报错时，在 GUI 右下角弹出可点击的浮窗并播放声音；设置里可分别开关与换声，支持上传自定义音频",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-api-session-controller",
+        "@deepseek-ai/dsh-client-connection"
+      ],
+      "platform": "web"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "web",
+    "notification",
+    "toast",
+    "sound",
+    "alert"
+  ],
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "license": "MIT"
+}

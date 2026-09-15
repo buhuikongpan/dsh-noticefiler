@@ -1,0 +1,12 @@
+# 开发期调试产物（不入库）
+cdp-*.mjs
+verify-*.mjs
+restart-dsh-web.ps1
+restart-dsh-web.log
+dumpcfg.txt
+dumpcfg.err
+sess*.jsonl
+STATE-RECORD.md
+
+node_modules/
+*.log
